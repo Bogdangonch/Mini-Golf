@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const burgerIcon = document.querySelector(".header__burger");
   const burgerMenu = document.querySelector(".burger");
   const burgerBg = document.querySelector(".burger__bg");
+  const body = document.querySelector(".body");
 
   function closeOtherDropdowns(currentButton) {
     dropdownButtons.forEach((button) => {
@@ -24,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
       closeOtherDropdowns(event.currentTarget);
     }
 
-    const rect = event.currentTarget.getBoundingClientRect();
-    dropdown.style.width = `${rect.width}px`;
-    dropdown.style.top = `${rect.bottom}px`;
-    dropdown.style.left = `${rect.left}px`;
+    // const rect = event.currentTarget.getBoundingClientRect();
+    // dropdown.style.width = `${rect.width}px`;
+    // dropdown.style.top = `${rect.bottom}px`;
+    // dropdown.style.left = `${rect.left}px`;
 
     dropdown.classList.toggle("show");
   }
@@ -51,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   burgerIcon.addEventListener("click", function () {
     burgerMenu.classList.toggle("active");
     burgerBg.classList.toggle("active");
+    body.classList.toggle("lock");
   });
 
   // Close burger menu
@@ -59,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerClose.addEventListener("click", function () {
       burgerMenu.classList.remove("active");
       burgerBg.classList.remove("active");
+      body.classList.remove("lock");
     });
   }
 });

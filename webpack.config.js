@@ -17,6 +17,12 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
+
+  devServer: {
+    watchFiles: path.join(__dirname, "src"),
+    port: 9000,
+  },
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",

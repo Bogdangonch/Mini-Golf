@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="/src/style/style.scss" /> -->
     <title>
       Minigolf München | Balls&amp;Clubs - Indoorspaß im Stadtzentrum
     </title>
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
-          <div class="header__navbar">
+          <nav class="header__navbar">
             <ul class="header__menu-list">
               <li class="header__menu-item menu__dropdown-btn">
                 <p class="header__menu-link">
@@ -95,7 +94,7 @@
             <div class="header__menu-item">
               <a href="/" class="header__menu-link">KONTAKT</a>
             </div>
-          </div>
+          </nav>
           <div class="header__burger">
             <p class="header__burger-menu-title">MENU</p>
             <button class="header__burger-icon"><span></span></button>
@@ -174,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <button class="intro__text-btn btn-primary-light main-book">
+              <button class="burger__text-btn btn-primary">
                 JETZT RESERVIEREN
               </button>
             </div>
@@ -207,7 +206,9 @@
           <div class="courses__container container">
             <div class="courses__title-container">
               <p class="course__icon-left"></p>
-              <h2 class="course__title">Unsere Indoor-Mini golfplätze</h2>
+              <h2 class="course__title title-general">
+                Unsere Indoor-Mini golfplätze
+              </h2>
               <p class="course__icon-right"></p>
             </div>
             <div class="course__subtext-overflow">
@@ -263,7 +264,7 @@
                     </picture>
                   </div>
                   <div class="courses__block-title-text">
-                    <h3 class="courses__block-title">WACHTURM</h3>
+                    <h3 class="courses__block-title title-general">WACHTURM</h3>
                     <div class="line-border"></div>
                     <p class="courses__block-subtitle">
                       Navigieren Sie durch einen Parcours voller lustiger
@@ -281,7 +282,9 @@
                         <li>1-6 SPIELER</li>
                         <li></li>
                       </ul>
-                      <button class="courses_block-button">SELECT</button>
+                      <button class="courses_block-button btn-secondary">
+                        SELECT
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -302,7 +305,9 @@
                     </picture>
                   </div>
                   <div class="courses__block-title-text">
-                    <h3 class="courses__block-title">TURBULENCE</h3>
+                    <h3 class="courses__block-title title-general">
+                      TURBULENCE
+                    </h3>
                     <div class="line-border"></div>
                     <p class="courses__block-subtitle">
                       Machen Sie sich bereit für einen Kurs, der so aufregend
@@ -319,7 +324,9 @@
                         <li>1-6 SPIELER</li>
                         <li></li>
                       </ul>
-                      <button class="courses_block-button">SELECT</button>
+                      <button class="courses_block-button btn-secondary">
+                        SELECT
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -340,7 +347,9 @@
                       alt="coming-soon"
                     />
                   </picture>
-                  <h2 class="bar__info-text-title">CLUBHOUSE BAR</h2>
+                  <h2 class="bar__info-text-title title-general">
+                    CLUBHOUSE BAR
+                  </h2>
                 </div>
                 <div class="bar__info-text-top-subtitle-block">
                   <p class="bar__info-text-subtitle">
@@ -427,6 +436,10 @@
             <div class="special-gifts__block-img-text">
               <div class="special-gifts__block-img">
                 <picture>
+                  <source
+                    srcset="./img/special-gifts-img-webp.webp"
+                    type="image/webp"
+                  />
                   <img
                     class="special-gifts__image"
                     src="./img/special-gifts-img.png"
@@ -435,7 +448,7 @@
                 </picture>
               </div>
               <div class="special-gifts__block-text">
-                <h3 class="special-gifts__block-text-title">
+                <h3 class="special-gifts__block-text-title title-general">
                   Gift <br />
                   cards
                 </h3>
@@ -449,8 +462,9 @@
                   den Spaß und die Aufregung beim Minigolf mit Freunden und
                   Familie zu teilen.
                 </p>
-                <button class="btn-primary-light btn-special-gifts-primary">
-                  Geschenkkarte <br />
+                <button class="btn-primary btn-special-gifts">
+                  Geschenkkarte
+                  <br />
                   kaufen
                 </button>
               </div>
@@ -463,11 +477,17 @@
             <div class="events__block-title">
               <div class="events__title-top">
                 <div class="events__decor-left">
-                  <picture><img src="./img/icon/icon1.png" alt="" /></picture>
+                  <picture>
+                    <img src="./img/icon/icon1.png" alt="decor"
+                  /></picture>
                 </div>
-                <h2 class="events__title">IHR BESONDERES EREIGNIS BEI UNS</h2>
+                <h2 class="events__title title-general">
+                  IHR BESONDERES EREIGNIS BEI UNS
+                </h2>
                 <div class="events__decor-right">
-                  <picture><img src="./img/icon/icon1.png" alt="" /></picture>
+                  <picture>
+                    <img src="./img/icon/icon1.png" alt="decor"
+                  /></picture>
                 </div>
               </div>
               <p class="events__title-description">
@@ -509,6 +529,357 @@
                 </div>
                 <div class="events__img-text top-left">UNTERNEHMEN</div>
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="rules">
+          <div class="rules__container container">
+            <div class="rules__block-title">
+              <p class="rules__subtitle">(STEP BY STEP)</p>
+              <h2 class="rules__title title-general">WIE WIRD GESPIELT?</h2>
+            </div>
+            <div class="rules__block-main-img visible">
+              <picture>
+                <source
+                  src="./img/main/rules/rules-img-webp.webp"
+                  type="image/webp"
+                />
+                <img src="./img/main/rules/rules-img.png" alt="image" />
+              </picture>
+            </div>
+            <div class="rules__block-main">
+              <div class="rules__block-main-img">
+                <picture>
+                  <source
+                    src="./img/main/rules/rules-img-webp.webp"
+                    type="image/webp"
+                  />
+                  <img src="./img/main/rules/rules-img.png" alt="image" />
+                </picture>
+              </div>
+              <div class="rules__block-item">
+                <div class="rules__number">01</div>
+                <div class="rules__block-description">
+                  <h3 class="rules__block-description-title title-general">
+                    Ein Spiel buchen
+                  </h3>
+                  <p class="rules__block-description-subtitle">
+                    Reservieren Sie Ihr Minigolf-Abenteuer online oder
+                    telefonisch, um sich Ihren Platz zu sichern.
+                  </p>
+                </div>
+              </div>
+              <div class="rules__block-item">
+                <div class="rules__number">02</div>
+                <div class="rules__block-description">
+                  <h3 class="rules__block-description-title title-general">
+                    Wählen Sie Ihren Schläger und Ball
+                  </h3>
+                  <p class="rules__block-description-subtitle">
+                    Wählen Sie das perfekte Schläger- und Balldesign, das zu
+                    Ihrem Spielstil passt.
+                  </p>
+                </div>
+              </div>
+              <div class="rules__block-item">
+                <div class="rules__number">03</div>
+                <div class="rules__block-description">
+                  <h3 class="rules__block-description-title title-general">
+                    Das Spiel gewinnen
+                  </h3>
+                  <p class="rules__block-description-subtitle">
+                    Navigieren Sie durch einen unserer Parcours und versuchen
+                    Sie, die niedrigste Punktzahl zu erreichen, um zu gewinnen.
+                  </p>
+                </div>
+              </div>
+              <div class="rules__block-item">
+                <div class="rules__number">04</div>
+                <div class="rules__block-description">
+                  <h3 class="rules__block-description-title title-general">
+                    Feiern an der Bar
+                  </h3>
+                  <p class="rules__block-description-subtitle">
+                    Nach dem Spiel können Sie in unserer Bar auf Ihren Sieg
+                    anstoßen oder sich einfach mit Freunden entspannen. Kommt
+                    wieder für mehr Spaß und herausfordernde Runden!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rules__block-text-button">
+              <h3 class="rules__text-subtitle title-general">
+                Haben Sie weitere Fragen zum Spiel?
+              </h3>
+              <button class="rules__btn btn-primary">GO FAQ</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="cool">
+          <div class="cool__container container">
+            <div class="cool__block-title">
+              <p class="cool__desk">
+                Entdecken Sie die einzigartigen Merkmale, die uns von den
+                anderen unterscheiden!
+              </p>
+              <p class="cool__top-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0988 16.1716L18.4627 10.8076L19.8769 12.2218L12.0988 20L4.32062 12.2218L5.73483 10.8076L11.0988 16.1716V4H13.0988V16.1716Z"
+                    fill="#2E2C28"
+                  ></path>
+                </svg>
+              </p>
+              <h2 class="cool_title title-general">
+                What <br />
+                Makes Us Cool
+              </h2>
+            </div>
+            <div class="cool__main-block">
+              <div class="cool__main-block-item">
+                <ul class="cool__main-block-list">
+                  <li class="cool__main-block-list-item">
+                    <h3 class="cool__main-block-item-title title-general">
+                      standort im stadtzentrum
+                    </h3>
+                    <picture>
+                      <source
+                        src="./img/main/cool/cool1.webp.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="cool__main-block-item-image"
+                        src="./img/main/cool/cool1.png"
+                        alt="image"
+                      />
+                    </picture>
+                    <p class="cool__main-block-item-desc">
+                      Leicht erreichbar und im Herzen von München gelegen, ist
+                      unser Veranstaltungsort der perfekte Ort für Spaß.
+                    </p>
+                  </li>
+                  <li class="cool__main-block-list-item">
+                    <h3 class="cool__main-block-item-title title-general">
+                      Indoor-Abenteuer
+                    </h3>
+                    <picture>
+                      <source
+                        src="./img/main/cool/cool2.webp.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="cool__main-block-item-image"
+                        src="./img/main/cool/cool2.png"
+                        alt="image"
+                      />
+                    </picture>
+                    <p class="cool__main-block-item-desc">
+                      Unser gemütlicher Innenraum ist perfekt für jedes Wetter
+                      an 365 Tagen im Jahr.
+                    </p>
+                  </li>
+                  <li class="cool__main-block-list-item">
+                    <h3 class="cool__main-block-item-title title-general">
+                      Kreativer Spielverlauf
+                    </h3>
+                    <picture>
+                      <source
+                        src="./img/main/cool/cool3.webp.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="cool__main-block-item-image"
+                        src="./img/main/cool/cool3.png"
+                        alt="image"
+                      />
+                    </picture>
+                    <p class="cool__main-block-item-desc">
+                      Fordern Sie sich selbst mit unseren einzigartig
+                      gestalteten Löchern heraus, die sehr ungewöhnliche
+                      Hindernisse aufweisen.
+                    </p>
+                  </li>
+                  <li class="cool__main-block-list-item">
+                    <h3 class="cool__main-block-item-title title-general">
+                      Stilvolle Raumgestaltung
+                    </h3>
+                    <picture>
+                      <source
+                        src="./img/main/cool/cool4.webp.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="cool__main-block-item-image"
+                        src="./img/main/cool/cool4.png"
+                        alt="image"
+                      />
+                    </picture>
+                    <p class="cool__main-block-item-desc">
+                      Unser Veranstaltungsort verfügt über ein künstlerisches
+                      Vintage-Design, das Ihr Minigolf-Erlebnis auf ein neues
+                      Niveau hebt.
+                    </p>
+                  </li>
+                  <li class="cool__main-block-list-item">
+                    <h3 class="cool__main-block-item-title title-general">
+                      Lebendige Bar
+                    </h3>
+                    <picture>
+                      <source
+                        src="./img/main/cool/cool5.webp.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="cool__main-block-item-image"
+                        src="./img/main/cool/cool5.png"
+                        alt="image"
+                      />
+                    </picture>
+                    <p class="cool__main-block-item-desc">
+                      Feiern Sie Ihr Spiel mit einem Besuch in unserer Bar, die
+                      eine Auswahl an erfrischenden Getränken in einer lebhaften
+                      Atmosphäre bietet.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="cool__block-btn">
+                <button class="cool_btn btn-primary">Jetzt Reservieren</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="contact__container container">
+            <div class="contact__main">
+              <div class="contact__left-block">
+                <h2 class="contact__left-block-title title-general">kontakt</h2>
+                <div class="contact__left-block-bottom">
+                  <ul class="contact__left-block-bottom-arrows">
+                    <li class="contact__left-block-bottom-item">
+                      <svg
+                        width="33"
+                        height="33"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.6765 9.10456L4.72563 32.0555L0.954407 28.2843L23.9053 5.33333H3.67659V0H33.0098V29.3333H27.6765V9.10456Z"
+                          fill="#E6DACA"
+                        />
+                      </svg>
+                    </li>
+                    <li class="contact__left-block-bottom-item">
+                      <svg
+                        width="33"
+                        height="33"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.6765 9.10456L4.72563 32.0555L0.954407 28.2843L23.9053 5.33333H3.67659V0H33.0098V29.3333H27.6765V9.10456Z"
+                          fill="#E6DACA"
+                        />
+                      </svg>
+                    </li>
+                    <li class="contact__left-block-bottom-item">
+                      <svg
+                        width="33"
+                        height="33"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.6765 9.10456L4.72563 32.0555L0.954407 28.2843L23.9053 5.33333H3.67659V0H33.0098V29.3333H27.6765V9.10456Z"
+                          fill="#E6DACA"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                  <button class="contact__left-block-bottom-btn btn-secondary">
+                    Get directions
+                  </button>
+                </div>
+              </div>
+              <div class="contact__right-block">
+                <div class="contact__right-block-info">
+                  <div class="contact__right-block-info-item">
+                    <h4 class="contact__right-block-info-item-title">phone</h4>
+                    <p class="contact__right-block-info-item-link">
+                      +49 172 401 1317
+                    </p>
+                  </div>
+                  <div class="contact__right-block-info-item">
+                    <h4 class="contact__right-block-info-item-title">email</h4>
+                    <p class="contact__right-block-info-item-link">
+                      +49 172 401 1317
+                    </p>
+                  </div>
+                  <div class="contact__right-block-info-item">
+                    <h4 class="contact__right-block-info-item-title">
+                      adresse
+                    </h4>
+                    <p class="contact__right-block-info-item-link">
+                      +49 172 401 1317
+                    </p>
+                  </div>
+                  <div class="contact__right-block-info-item">
+                    <h4 class="contact__right-block-info-item-title">
+                      ÖFFNUNGSZEITEN:
+                    </h4>
+                    <p class="contact__right-block-info-item-link">
+                      +49 172 401 1317
+                    </p>
+                  </div>
+                </div>
+                <div class="contact__right-block-map">
+                  <picture>
+                    <source
+                      srcset="./img/main/contact/Map.webp.webp"
+                      type="image/webp"
+                    />
+                    <img src="img/main/contact/Map.png" alt="map" />
+                  </picture>
+                  <button
+                    style="display: none"
+                    class="contact__right-block-map-btn btn-primary"
+                  >
+                    Get directions
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="contact__desc-bottom">
+              <p class="contact__desc-bottom-title">
+                Discover Indoor Mini Golf in Munich
+              </p>
+              <br />
+              <p class="contact__desc-bottom-desc">
+                Mini Golf in Munich - das Original aus Dubai - ab sofort auch in
+                Österreich. Nach unserem Erfolg in Dubai, heißt es für uns -
+                NoWayOut goes International. Mitten im Herzen von Wien, einer
+                der schönsten Altstädte der Welt, eröffnen wir direkt im
+                Zentrum, unsere neueste premium Location. Unsere premium Escape
+                Games, haben den höchsten Qualität Standard der Escape Game
+                Industrie, die besten Szenarien, die neuesten Rätsel und die
+                immersivsten Räume - bringen euch mitten in die verschiedensten
+                Welten. Testet eure Team Work, Logik und habt Spass. Egal ob das
+                erste Date, Spaß mit Freunden, Firmenveranstaltungen oder mit
+                der Familie - NoWayOut ist genau richtig! Ihr habt 60 Minuten
+                Zeit - auf gehts.
+              </p>
             </div>
           </div>
         </section>
